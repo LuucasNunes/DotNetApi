@@ -12,6 +12,8 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+app.MapGet("person", () => "Olá pessoal");
+
 app.UseHttpsRedirection();
 app.Run();
 
